@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../components/layout/Header";
@@ -9,11 +8,6 @@ import BottomNavigation from "../components/layout/BottomNavigation";
 import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "ConnectIn",
-  description: "A social media app for connecting professionals.",
-};
 
 export default function RootLayout({
   children,

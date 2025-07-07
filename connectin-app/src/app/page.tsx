@@ -1,12 +1,13 @@
-import React from 'react';
+import WelcomeSection from '../components/home/WelcomeSection';
+import RecommendedCircles from '../components/home/RecommendedCircles';
 
-const HomePage: React.FC = () => {
+export default function Home() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">ホーム</h1>
-      <p>これはホーム画面です。</p>
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="container mx-auto px-4 py-8">
+        <WelcomeSection />
+        <RecommendedCircles />
+      </div>
+    </main>
   );
-};
-
-export default HomePage;
+}
